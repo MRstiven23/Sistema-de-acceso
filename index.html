@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AXIS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<style>
+  
+</style>
+
+<section id="inicio" class="registro visible" >
+    <h2 id="titulo2">Bienvenido a Axis</h2>
+    <button onclick="mostrarSeccion('registros')">registrar</button><br><br>
+    <button onclick="mostrarSeccion()">ingresar al ambiente</button>
+    
+</section>
+
+    <section class="registros" id="registros" >
+        <h1>Registro</h1>
+        <button id="bInicio" onclick="mostrarSeccion('inicio')">inicio</button><br><br>
+        <button onclick="mostrarSeccion('registroAprendiz')">aprendiz</button><br><br>
+        <button onclick="mostrarSeccion('registroInstructor')">instructor</button><br><br><br>
+
+    </section>
+
+    <section class="registros" id="registroAprendiz">
+        <h1>
+            registro del aprendiz
+        </h1>
+        <button id="bInicio" onclick="mostrarSeccion('inicio')">inicio</button><br><br>
+        <label for="nombre">Nombres</label>
+        <input type="text" id="nombreAprendiz" name="nombreAprendiz" title="nombreA"> <br><br>
+         <label for="nombre">apellidos: </label>
+        <input type="text" id="apellidoAprendiz" name="apellidoAprendiz" title="apellidoA"> <br><br>
+        <label for="documento">tipo de documento: </label>
+        <select name="typeDocument" id="typeDocument" title="selecciona tu documento">
+            <option value="cc">cedula de ciudadania</option>
+            <option value="ti">tarjeta de identidad</option>
+        </select><br><br>
+        <label for="documento">Número de documento: </label>
+        <input type="number" id="documentoAprendiz" name="documentoAprendiz" title="documentoA"><br><br>
+        <label for="codigo">cree un codigo de ingreso: </label>
+        <input type="number" id="codigoAprendiz" name="codigoAprendiz" title="codigoA"><br><br><br>
+
+    </section>
+
+    <section class="registros" id="registroInstructor">
+        <h1>Registro del instructor</h1>
+        <button id="bInicio" onclick="mostrarSeccion('inicio')">inicio</button><br><br>
+        <label for="Nombre">Nombres</label>
+        <input type="text" id="NombreInstructor" name="NombreInstructor" title="nombreI"><br><br>
+        <label for="Nombre">apellidos</label>
+        <input type="text" id="ApellidoInstructor" name="apellidoInstructor" title="apellidoI"><br><br>
+        <label for="correo">digite su correo electronico</label>
+        <input type="text" name="correoInstructor" id="correoInstructor" title="correoI"><br><br>
+        <label for="codigo">Cree un codigo de ingreso</label>
+        <input type="number" name="codigoInstructor" id="codigo instructor" title="CodigoI"><br><br>
+    </section><br>
+    
+    <script src="script.js"></script>
+</body>
+</html>
